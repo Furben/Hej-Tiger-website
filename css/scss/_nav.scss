@@ -1,0 +1,116 @@
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+.nav > li > a:hover, .nav > li > a:focus {
+	color: $link-color;
+    background-color: none;
+    text-decoration: none;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+.navbar-inverse {
+    background: $primary;
+    border: none !important;
+    z-index: 5000;
+}
+
+.home-header .navbar-inverse {
+    background: none;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background: none !important;
+}
+
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 5px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: $color-5;	
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: $color-5;
+	color: $link-color !important;	
+}
+
+/* ==========================================================================
+   hej tiger nav
+   ========================================================================== */
+
+.header-container {
+    margin: 0 auto;
+    width: 98%;
+}
+
+ul#menu-hovedmenu {
+	text-align: center;
+}
+
+.nav-hejtiger {
+	margin: 0 auto;
+}
+
+.nav-hejtiger > li {
+    display: inline-block;
+    position: relative;
+  top: 50%;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+}
+
+.nav-hejtiger > li > a {
+    color: $color-5;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+/**
+ * søgeikon
+ */
+
+
+
