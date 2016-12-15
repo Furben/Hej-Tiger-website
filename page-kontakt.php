@@ -6,25 +6,53 @@
 
 <?php get_header(); ?>
 
-<section id="main" class="section-space page-kontakt">
+<section id="main" class="section-space page-kontakt link-bg">
   <div class="container">
 
   <div class="row">
       <div class="col-md-12">
 
-        <div class="page-header">
-          <div class="text-center">
-            <h2>HejTiger er klar til at hjælpe</h2>
-            <p>Skriv en mail eller udfyld skemaet</p>
-          </div>
-          
+      <div class="page-header">
+          <h1>Hej Tiger er klar til at hjælpe</h1>
+          <h2>Udfyld skemaet, eller lad os blot tage en snak</h2>
+
+
         </div><!-- page-header -->
 
-       </div><!-- col-md-12 -->
-    </div><!-- row -->
+       <form action="" method="post" class="contact-form"> 
+      <div class="row">      
+           <div class="col-md-6 col-sm-6 col-lg-6">
 
-    <div class="row">
-      <div class="col-md-9">
+               <input id="name" class="form-control" type="text" placeholder="Navn">    
+           </div>
+           <div class="col-md-6 col-sm-6 col-lg-6">
+
+               <input id="email" class="form-control" type="text" placeholder="Email">    
+           </div>             
+      </div>
+      <div class="row">
+           <div class="col-md-6 col-sm-6 col-lg-6">
+               <input id="company" class="form-control" type="email" placeholder="Evt. firma">             
+           </div>
+
+           <div class="col-md-6 col-sm-6 col-lg-6">
+               <input id="phone" class="form-control" type="phone" placeholder="Evt. Tlf">             
+           </div>               
+      </div>
+
+      <div class="row">
+           <div class="col-md-12 col-sm-12 col-lg-12">
+               <textarea class="form-control" id="message" name="message" placeholder="Besked" rows="15"></textarea> 
+                <button class="btn btn-default logbutton pull-right">Send Besked</button>            
+           </div>
+
+                         
+      </div>
+      
+    </form>
+
+       
+
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       		<article>
@@ -41,11 +69,10 @@
       		<p>Fandt ikke hvad ud søgte.</p>
       	<!-- no posts found -->
       	<?php endif; ?>
-      </div>
-      
-      <?php get_sidebar(); ?>
 
-    </div>
+        </div><!-- col-md-12 -->
+    </div><!-- row -->
+     
   </div>
 </section>
 

@@ -1,31 +1,31 @@
 <?php 
 /**
- * page.php
+ * home.php
+ * page template 
  */
 ?>
 
 <?php get_header(); ?>
 
-<section id="main" class="section-space">
+<section id="main">
   <div class="container">
-
-  <div class="row">
-
-        <div class="page-header main-bg">
-          <h1><?php wp_title(''); ?></h1>
-          <h2>tagline</h2>
-
-
-        </div><!-- page-header -->
-    </div><!-- row -->
-
     <div class="row">
       <div class="col-md-9">
 
+      	<div class="page-header">
+      		<h1><?php wp_title(''); ?></h1>
+      	</div>
+
+
       	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       		<article>
-
-            <?php the_content(); ?>
+      			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      			<p><?php the_author(); ?> | 
+      				<?php echo the_time('j F Y') ?> -
+      				<?php the_category(', ') ?>
+      			</p>
+      			<?php the_excerpt(); ?>
+      			<hr>
       		</article>
       	<!-- post -->
       	<?php endwhile; ?>
@@ -39,7 +39,7 @@
       	<?php endif; ?>
       </div>
       
-      <?php get_sidebar(); ?>
+      <?php get_sidebar( 'blog' ); ?>
 
     </div>
   </div>

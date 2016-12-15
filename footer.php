@@ -7,13 +7,13 @@
       <div class="col-sm-12">
         <div class="info-box">
           <div class="adresse section-space-24">
-            <h4>Hej Tiger</h4>
+            <h3>Hej Tiger</h3>
             <p>c/o Idériget <br> Mejlgade 43.A | 8000 Århus C</p>
            
             <a href="mailto:hej@hejtiger.dk">hej@hejtiger.dk</a>
           </div><!--adressse-->
           <div class="kontakt-options section-space-24">
-            <h4>Uforpligtende tilbud</h4>
+            <h3>Uforpligtende tilbud</h3>
             <p>Se hvad Hej Tiger kan gøre for dig. Det hjælper altid fortælle så meget som muligt om projektet.</p>
             <a href="#">Projekt & Pris info</a>
          </div><!-- kontakt-options-->

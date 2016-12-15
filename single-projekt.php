@@ -1,8 +1,3 @@
-<?php
-/**
-* page.php
-*/
-?>
 <?php get_header(); ?>
 <section id="main" class="section-space">
   <div class="container">

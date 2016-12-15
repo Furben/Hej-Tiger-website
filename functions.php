@@ -72,7 +72,7 @@ add_action ( 'after_setup_theme', 'hejtiger_setup' );
     function ht_custom_fonts() {
 
             
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Exo+2|Muli');
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Poppins|Muli');
             
             wp_enqueue_style( 'googleFonts');
 
@@ -106,31 +106,4 @@ wpt_create_widget( 'footer center', 'footer-center', 'Displays in the footer cen
 wpt_create_widget( 'footer right', 'footer-right', 'Displays in the footer right side' );
 
 
-/* ==========================================================================
-   Advanced custom fields
-   ========================================================================== */
-function my_acf_admin_head()
-{
-	?>
-	<style type="text/css">
 
-	.ck-clear {
-
-  clear: both !important;
-}
-
-	</style>
-
-	<script type="text/javascript">
-	(function($){
-
-		/* ... */
-
-	})(jQuery);
-	</script>
-	<?php
-}
-
-add_action('acf/input/admin_head', 'my_acf_admin_head');
-
-?>

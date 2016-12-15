@@ -8,8 +8,8 @@
 
 <?php get_template_part('feature'); ?>
 
-<?php get_template_part('latest-project'); ?>
-
 <?php get_template_part('about'); ?>
+
+<?php get_template_part('latest-project'); ?>
 
 <?php get_footer(); ?>

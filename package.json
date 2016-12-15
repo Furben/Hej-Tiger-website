@@ -1,0 +1,27 @@
+{
+  "name": "hejtiger-framework",
+  "version": "1.0.0",
+  "description": "Hejtigers starting wordpress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "Loving it"
+  },
+  "author": "Jesper Thabo Rasmussen",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "install": "^0.8.2",
+    "npm": "^4.0.3",
+    "susy": "^2.2.12"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.1"
+  }
+}
